@@ -1,0 +1,12 @@
+apiVersion: math.stream.com/v1
+kind: Arithmetic
+metadata:
+  labels:
+    app.kubernetes.io/name: arithmetic
+    app.kubernetes.io/instance: arithmetic-sample
+    app.kubernetes.io/part-of: math-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: math-operator
+  name: arithmetic-sample
+spec:
+  expression: "5 * (4 + 2)"
